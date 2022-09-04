@@ -21,7 +21,7 @@
 
 ## 碎碎念
 
-①、项目里所有控件，都是自己写的，纯纯的车轮人行为
+①、项目里的Qt控件基本重写过，纯纯的车轮人行为
 
 ②、几个月前我那同学在用什么语言来做备份工具 <a href='https://github.com/lraty-li/VisualBranching'>[跳转查看]</a>，问我矩阵啥的，当时我就很疑惑，
 为啥要搞矩阵，他说那api要往里头丢矩阵，于是联想到我以前做的其中一个整活 <a href='https://github.com/Ls-Jan/PyQt_MCCloakMaker'>MC披风生成器</a> ，
