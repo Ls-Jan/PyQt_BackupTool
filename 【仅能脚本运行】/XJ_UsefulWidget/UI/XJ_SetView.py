@@ -76,7 +76,9 @@ class XJ_SetView(QWidget):#显示集合，并允许对元素重命名(出现重�
             else:#为空说明是对最后一个元素进行修改的，意为增添新元素
                 iter=self.__tv.GetIter_Root()
                 iter.Next(iter.GetNextCount()-1)
+                self.__tv.blockSignals(True)#暂时关闭信号(谁又能知道，设置单元格颜色一样会触发dataChanged信号
                 iter.SetColor(0,bg=(255,255,255))#重新染白
+                self.__tv.blockSignals(False)#重新打开信号
                 self.__AddItem('')
                 self.createData.emit(after)
     def __AddItem(self,item):
